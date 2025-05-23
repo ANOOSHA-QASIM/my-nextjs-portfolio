@@ -16,22 +16,7 @@ const Projects = () => {
       github: "https://github.com/ANOOSHA-QASIM/e-commerce.git",
       vercel: "https://e-commerce-aq.vercel.app/",
     },
-    {
-      title: "Blog Website",
-      tech: "Next.js, Sanity",
-      image: "/blog.jpg",
-      description: "A modern blog platform with a clean UI, dynamic content, and seamless navigation.",
-      github: "https://github.com/ANOOSHA-QASIM/sanity-blogs-website.git",
-      vercel: "#",
-    },
-    {
-      title: "Food Website",
-      tech: "HTML, CSS",
-      image: "/food.jpg",
-      description: "A responsive food ordering site with real-time menu updates and intuitive design.",
-      github: "",
-      vercel: "#",
-    },
+    
     {
       title: "Resume Builder Website",
       tech: "HTML, CSS, TypeScript",

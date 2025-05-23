@@ -10,12 +10,7 @@ const experiences = [
     duration: "2024 – Present (1 Year)",
     description: "Developed multiple web and Python-based projects, including e-commerce platforms, resume builders, and AI-driven applications using Next.js, TypeScript, and Streamlit. Focused on responsive design and performance optimization.",
   },
-  {
-    title: "Freelance Web Developer",
-    company: "Self-Employed",
-    duration: "2023 – Present",
-    description: "Designed and built responsive websites for small businesses, leveraging HTML, CSS, JavaScript, and Tailwind CSS. Collaborated with clients to deliver user-friendly interfaces and optimized user experiences.",
-  },
+ 
 ];
 
 const Experience = () => {
