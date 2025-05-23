@@ -44,7 +44,7 @@ const Testimonials = () => {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: false, amount: 0.4 }}
             >
-              <p className="text-gray-400 leading-relaxed mb-4 italic">"{testimonial.quote}"</p>
+              <p className="text-gray-400 leading-relaxed mb-4 italic">{`"${testimonial.quote}"`}</p>
               <h3 className="text-lg font-semibold text-white">{testimonial.name}</h3>
               <p className="text-sm text-gray-400">{testimonial.role}</p>
             </motion.div>
