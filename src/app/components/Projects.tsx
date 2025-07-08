@@ -86,7 +86,7 @@ const Projects = () => {
     {
       title: "Python Mini Games",
       tech: "Python",
-      image: "/python.jpg",
+      image: "/Python.jpg",
       description:
         "A collection of engaging mini-games demonstrating Python programming skills.",
       github:
