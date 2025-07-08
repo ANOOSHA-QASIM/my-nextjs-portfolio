@@ -6,7 +6,7 @@ import Services from "./components/services";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Feature from "./components/feature";
-import Testimonials from "./components/Testimonals";
+
 import Contact from "./components/Contact";
 
 
@@ -37,9 +37,7 @@ export default function Home() {
       <div id="features" className="scroll-mt-20">
         <Feature />
       </div>
-      <div id="testimonials" className="scroll-mt-20">
-        <Testimonials />
-      </div>
+      
       <div id="contact" className="scroll-mt-20">
         <Contact />
       </div>
