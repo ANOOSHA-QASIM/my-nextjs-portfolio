@@ -17,7 +17,6 @@ const Projects = () => {
       github: "https://github.com/ANOOSHA-QASIM/e-commerce.git",
       vercel: "https://e-commerce-aq.vercel.app/",
     },
-
     {
       title: "Resume Builder Website",
       tech: "HTML, CSS, TypeScript",
@@ -35,6 +34,15 @@ const Projects = () => {
         "A clean and responsive Tic-Tac-Toe game with win/draw detection and disabled gameplay after result.",
       github: "https://github.com/ANOOSHA-QASIM/tic-tac-toe",
       vercel: "https://tic-tac-toe-liart-theta-25.vercel.app/",
+    },
+    {
+      title: "Currency Converter App",
+      tech: "HTML, CSS, TypeScript",
+      image: "/currency.png",
+      description:
+        "A real-time currency converter app with live exchange rates, country flags, and clean responsive UI.",
+      github: "https://github.com/ANOOSHA-QASIM/currency-converter-ts",
+      vercel: "https://currency-converter-ts-khqr.vercel.app/",
     },
   ];
 
@@ -108,36 +116,26 @@ const Projects = () => {
   return (
     <motion.section
       className="text-gray-400 bg-gray-900 font-inter py-20 relative overflow-hidden"
-      initial={{ opacity: 0 }}
+      initial={{ opacity: 1 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ once: false, amount: 0.3 }}
+      transition={{ duration: 0.4 }}
+      viewport={{ once: true }}
     >
       <div className="absolute inset-0 bg-gray-900" />
       <div className="container mx-auto px-5 relative z-10">
         <div className="flex flex-wrap w-full mb-12">
           <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-            <motion.h1
-              className="sm:text-4xl text-3xl font-bold text-white mb-4 bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600"
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false }}
-            >
+            <h1 className="sm:text-4xl text-3xl font-bold text-white mb-4 bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600">
               My Projects
-            </motion.h1>
+            </h1>
             <div className="h-1 w-20 bg-gradient-to-r from-indigo-500 to-purple-600 rounded" />
           </div>
-          <motion.p
-            className="lg:w-1/2 w-full leading-relaxed text-gray-400 text-lg"
-            initial={{ opacity: 0, y: -50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: false }}
-          >
+          <p className="lg:w-1/2 w-full leading-relaxed text-gray-400 text-lg">
             Explore my portfolio of web and Python-based projects, showcasing
             modern, responsive designs and innovative solutions.
-          </motion.p>
+          </p>
         </div>
+
         <div className="flex justify-center gap-4 mb-8">
           <button
             className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
@@ -160,41 +158,32 @@ const Projects = () => {
             Python Projects
           </button>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {(filter === "featured" ? featuredProjects : pythonProjects).map(
             (project, index) => (
               <motion.div
                 key={index}
                 className="p-4"
-                initial={{ opacity: 0, y: 60 }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                viewport={{ once: false, amount: 0.4 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                viewport={{ once: true }}
               >
                 <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl glow-border hover:bg-gray-700 transition-all duration-300 h-full flex flex-col">
                   <Image
                     src={project.image}
                     alt={project.title}
-                    width={300}
-                    height={160}
+                    width={500}
+                    height={250}
                     className="rounded-lg w-full h-40 object-cover mb-4"
                   />
-                  <motion.h3
-                    className="text-sm text-indigo-400 tracking-widest uppercase mb-2"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.2 }}
-                  >
+                  <h3 className="text-sm text-indigo-400 tracking-widest uppercase mb-2">
                     {project.tech}
-                  </motion.h3>
-                  <motion.h2
-                    className="text-xl font-semibold text-white mb-3"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.3 }}
-                  >
+                  </h3>
+                  <h2 className="text-xl font-semibold text-white mb-3">
                     {project.title}
-                  </motion.h2>
+                  </h2>
                   <p className="text-gray-400 leading-relaxed flex-grow">
                     {project.description}
                   </p>
