@@ -126,7 +126,7 @@ const Hero = () => {
             transition={{ delay: 0.4, duration: 0.6 }}
           >
             <a
-              href="/Resume Builder Website.pdf"
+              href="/Anusha Qasim Resume.pdf"
               download
               className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-3 px-6 rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
             >
